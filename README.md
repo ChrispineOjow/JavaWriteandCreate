@@ -20,8 +20,3 @@
 - Java 21+ (Java 25 recommended for simplified `main` syntax).
 - A terminal or IDE (IntelliJ, VS Code, or Eclipse).
 
-## 📝 Example
-How to add this to your project:
-1. Create a new file in your project folder named `README.md`.
-2. Paste the text above into it.
-3. When you push to GitHub, this will automatically appear as the front page of your repository!
