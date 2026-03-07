@@ -2,6 +2,7 @@
 - **Smart File Naming:** Automatically appends `.txt` if you forget to type it.
 - **Input Validation:** Prevents empty filenames or invalid entries like `.`.
 - **Modular Design:** Separate classes for File Creation and File Writing.
+- **Read Mode**: Opens an existing `.txt` file and prints its contents to the console line-by-line using `Scanner`.
 - **Modern Java:** Uses simplified `main` method syntax available in recent Java versions.
 
 ## 🛠️ How to Use
@@ -9,12 +10,14 @@
 2. **Choose an Action:**
     - Type `create` to generate a new empty file.
     - Type `write` to add text to an existing or new file.
+    - Type `read` to read an already existing file
 3. **Follow the Prompts:** Enter the filename (e.g., `myNotes`) and the content you wish to save.
 
 ## 📂 Project Structure
 - `Main.java` - The entry point; handles user interaction and input logic.
 - `CreateFile.java` - Contains logic for checking and creating files on the disk.
 - `WriteFile.java` - Contains logic for saving user strings into the specified file.
+- `ReadFile.java` - Contains logic for reading the user data in the files.
 
 ## 💻 Technical Requirements
 - Java 21+ (Java 25 recommended for simplified `main` syntax).

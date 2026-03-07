@@ -5,8 +5,8 @@ public class WriteFile {
     static void writeFile(String fileName, String entry){
 
         try{
-            FileWriter myObj = new FileWriter(fileName);
-            myObj.write(entry);
+            FileWriter myObj = new FileWriter(fileName, true);//This is to append the file
+            myObj.write("\n"+entry);
             System.out.println("The file has been written in " + fileName);
             myObj.close();
         }catch(IOException e){
