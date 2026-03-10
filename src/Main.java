@@ -5,7 +5,7 @@ public class Main{
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Do you want to write or create a file or read a file: ");
+        System.out.print("Do you want to write or create a file or read a file or delete a file:  ");
         String choice = input.nextLine().toLowerCase();
 
         if(choice.equals("create")) { //This is to create a file with the extension .txt
@@ -51,6 +51,19 @@ public class Main{
                 }
 
                 ReadFile.readFile(filename);
+            }
+
+        } else if (choice.equals("delete")) {
+            System.out.print("Enter the name of the file you want to delete: ");
+            String fileName = input.nextLine().trim().toLowerCase();
+
+            if(fileName.isBlank()){;
+                System.out.println("Please enter the filename of the file you want to delete!!!");
+            }else{
+                if(!fileName.contains(".txt")){
+                    fileName = fileName + ".txt";
+                }
+                DeleteFile.deleteFile(fileName);
             }
 
         } else{
